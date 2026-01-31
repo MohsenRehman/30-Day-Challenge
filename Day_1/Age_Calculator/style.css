@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.age-container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 48px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow:2px 2px 35px   orange ;
+}
+
+.age-header {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 32px;
+    position: relative;
+    letter-spacing: -0.5px;
+}
+
+.age-input {
+    margin-bottom: 28px;
+}
+
+.age-input label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.age-input-dob {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: #2d3748;
+    background: #f7fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+.age-button {
+    margin-bottom: 24px;
+}
+
+.Calculate-btn {
+    width: 100%;
+    padding: 18px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    background: #667eea;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.age-result {
+    text-align: center;
+    font-size: 20px;
+    color: #2d3748;
+    font-weight: 600;
+    padding: 24px;
+    background:lightblue;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .age-container {
+        padding: 32px 24px;
+        border-radius: 20px;
+    }
+    
+    .age-header {
+        font-size: 28px;
+    }
+    
+    .age-input-dob,
+    .Calculate-btn {
+        padding: 16px;
+        font-size: 16px;
+    }
+}
+
+
+
+
